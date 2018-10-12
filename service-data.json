@@ -1,0 +1,28 @@
+{
+   "services": {
+        "firstService": {
+            "nameService": "Послуга №1",
+            "describingService": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales fermentum gravida. Vivamus elementum massa neque, sed fringilla mi malesuada aliquet."
+        },
+        "secondService": {
+            "nameService": "Послуга №2",
+            "describingService": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales fermentum gravida. Vivamus elementum massa neque, sed fringilla mi malesuada aliquet."
+        },
+        "thirdService": {
+            "nameService": "Послуга №3",
+            "describingService": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales fermentum gravida. Vivamus elementum massa neque, sed fringilla mi malesuada aliquet."
+        },
+        "fourthService": {
+            "nameService": "Послуга №4",
+            "describingService": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales fermentum gravida. Vivamus elementum massa neque, sed fringilla mi malesuada aliquet."
+        },
+        "fifthService": {
+            "nameService": "Послуга №5",
+            "describingService": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales fermentum gravida. Vivamus elementum massa neque, sed fringilla mi malesuada aliquet."
+        },
+        "sixthService": {
+            "nameService": "Послуга №6",
+            "describingService": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales fermentum gravida. Vivamus elementum massa neque, sed fringilla mi malesuada aliquet."
+        }
+   }
+}

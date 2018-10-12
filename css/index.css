@@ -115,7 +115,10 @@ body {
 /*-----Section for Logo+description and Nav+burger menu------*/  
 header {
     border-bottom: 1px solid white;
-    -webkit-transition: all 1s ease;
+    -webkit-transition: all 1s ease; 
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
     transition: all 1s ease;
 }
 
@@ -218,8 +221,11 @@ header {
     text-transform: uppercase;
     text-decoration: none;
     padding: 0 1%;
-    -webkit-transition: all 1s ease; 
-    transition: all 1s ease;
+    -webkit-transition: all .3s ease; 
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
 }
 
 .nav-menu-sticky a, .nav-menu a:hover  {
@@ -322,19 +328,28 @@ header {
 }
 
 .burger::after, .burger::before, .burger {
+    -webkit-transition: all .3s ease-in-out; 
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-    -webkit-transition: all .3s ease-in-out;
 }
 
 .nav-menu-on .burger::after {
-    transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
     bottom: 0px;
 }
 
 .nav-menu-on .burger::before {
-    transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
     top: 0px;
 }
 
@@ -486,7 +501,10 @@ header {
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
     text-align: right;
-    -webkit-transition: width 1.5s;
+    -webkit-transition: all .3s width 1.5s; 
+    -moz-transition: all .3s width 1.5s;
+    -ms-transition: all width 1.5s;
+    -o-transition: all width 1.5s;
     transition: width 1.5s;
 }
 
@@ -614,13 +632,19 @@ header {
 }
 
 .about-service-description div > span:first-child i {
-    transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out; 
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+     transition: all .5s ease-in-out;
 }
 
 .about-service-description .about-service-description-hover > span:first-child i {
+    -webkit-transition: rotate(360deg); 
+    -moz-transition: rotate(360deg);
+    -ms-transition: rotate(360deg);
+    -o-transition: rotate(360deg);
     transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
 }
 
 .about-service-description div > p:nth-child(2) {
@@ -688,6 +712,19 @@ header {
 
 .about-works-gallery img {
     width: 33.333333%;
+    -webkit-transition: all .3s ease-in-out; 
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.about-works-gallery img:hover {
+    -webkit-transition: scale(1.1, 1.1); 
+    -moz-transition: scale(1.1, 1.1);
+    -ms-transition: scale(1.1, 1.1);
+    -o-transition: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
 }
 
 @media (max-width: 768px) {
@@ -746,10 +783,22 @@ header {
 
 @media (max-width: 768px) {
     .slick-slide img {
-        width: 100%
+        width: 55%;
     }
     .slick-dotted.slick-slider {
         margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 550px) {
+    .slick-slide img {
+        width: 70%;
+    }
+    .slick-next {
+        right: -18px;
+    }
+    .slick-prev {
+        left: -18px;
     }
 }
 
@@ -804,6 +853,16 @@ header {
 .sheme-work-bg-img {
     background-image: url('../img/work-sheme-bg.jpg');
     min-height: 90vh;
+}
+
+.sheme-work-caption-first {
+    margin-top: 20%;
+}
+
+@media (max-width: 450px) {
+    .sheme-work-caption-first {
+        margin-top: 30%;
+    }        
 }
 
 .sheme-work-description div {

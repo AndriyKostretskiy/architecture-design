@@ -130,58 +130,58 @@
                         </div>
                         <div class="about-service-description flex-row-layout">
                             <div class="service-first">
-                                <span>
+                                <span class="load-json-ajax">
                                     <i class="fab fa-adn"></i>
                                 </span>
                                 <p>
-                                    <span>Послуга №1</span>
+                                    <span class="firstServiceName"></span>
                                 </p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales fermentum gravida. Vivamus elementum massa neque, sed fringilla mi malesuada aliquet.</p>
+                                <p class="firstServiceDescript"></p>
                             </div>
                             <div class="service-second">
                                 <span>
                                     <i class="fas fa-archive"></i>
                                 </span>
-                                <p class="">
-                                    <span>Послуга №2</span>
+                                <p>
+                                    <span class="secondServiceName"></span>
                                 </p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales fermentum gravida. Vivamus elementum massa neque, sed fringilla mi malesuada aliquet.</p>
+                                <p class="secondServiceDescript"></p>
                             </div>
                             <div class="service-third">
                                 <span>
                                     <i class="fas fa-desktop"></i>
                                 </span>
                                 <p>
-                                    <span>Послуга №3</span>
+                                    <span class="thirdServiceName"></span>
                                 </p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales fermentum gravida. Vivamus elementum massa neque, sed fringilla mi malesuada aliquet. </p>
+                                <p class="thirdServiceDescript"></p>
                             </div>
                             <div class="service-fourth">
                                 <span>
                                     <i class="fas fa-sitemap"></i>
                                 </span>
                                 <p>
-                                    <span>Послуга №4</span>
+                                    <span class="fourthServiceName"></span>
                                 </p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales fermentum gravida. Vivamus elementum massa neque, sed fringilla mi malesuada aliquet. </p>
+                                <p class="fourthServiceDescript"></p>
                             </div>
                             <div class="service-fifth">
                                 <span>
                                     <i class="fas fa-print"></i>
                                 </span>
                                 <p>
-                                    <span>Послуга №5</span>
+                                    <span class="fifthServiceName"></span>
                                 </p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales fermentum gravida. Vivamus elementum massa neque, sed fringilla mi malesuada aliquet. </p>
+                                <p class="fifthServiceDescript"></p>
                             </div>
                             <div class="service-sixth">
                                 <span>
                                     <i class="fas fa-glasses"></i>
                                 </span>
                                 <p>
-                                    <span>Послуга №6</span>
+                                    <span class="sixthServiceName"></span>
                                 </p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales fermentum gravida. Vivamus elementum massa neque, sed fringilla mi malesuada aliquet. </p>
+                                <p class="sixthServiceDescript"></p>
                             </div>
                         </div>
                     </div>
@@ -263,7 +263,7 @@
                 <div class="container grid-columns-layout">
                     <div class="sheme-work-caption flex-column-layout margin-bottom-5rem">
                         <div class="align-center">
-                            <h2 class="captions-titles captions-first-titles">
+                            <h2 class="captions-titles captions-first-titles sheme-work-caption-first">
                                 Схема <span class="captions-first-titles-color">роботи</span>
                             </h2>
                         </div>
@@ -297,7 +297,7 @@
                             <span>
                                 <i class="far fa-paper-plane"></i>
                             </span>
-                            <p class="">
+                            <p>
                                 <span>Розробка</span>
                             </p>
                         </div>
@@ -305,7 +305,7 @@
                             <span>
                                 <i class="far fa-handshake"></i>
                             </span>
-                            <p class="">
+                            <p>
                                 <span>Договір</span>
                             </p>
                         </div>
@@ -313,7 +313,7 @@
                     <div class="sheme-work-line flex-row-layout">
                         <span class="captions-lines-border captions-lines-width"></span>
                     </div>
-                </div>    
+                </div>
             </section>
             <!-- /section-sheme -->
             <!-- section-contacts -->
@@ -324,7 +324,6 @@
                             <h2 class="captions-titles captions-first-titles">
                                 <span class="captions-first-titles-color">Наші </span>
                                 контакти
-                        
                             </h2>
                         </div>
                         <div>
@@ -341,7 +340,7 @@
                             <div>
                                 <p>
                                     <span>Львів, Федьковича 60a</span>
-                                    <span class="">
+                                    <span>
                                         <i class="fas fa-map-marker-alt"></i>
                                     </span>
                                 </p>
@@ -349,7 +348,7 @@
                             <div>
                                 <p>
                                     <span>+30963452678</span>
-                                    <span class="">
+                                    <span>
                                         <i class="fas fa-phone"></i>
                                     </span>
                                 </p>
@@ -377,24 +376,19 @@
                         <div class="contacts-description-right">
                             <form action="https://formspree.io/andriy.kostretskiy@gmail.com" method="POST" name="form-contacts" class="">
                                 <p class="flex-row-layout">
-                                  <label for="name"></label>
-                                
-                                  <input type="text" name="name" id="name" class ="bg-size-color border-width-form" placeholder="Ім&#039;я" required>
-                        
-                                  <label for="phone"></label>
-                    
-                                  <input type="text" name="phone" id="phone" class ="bg-size-color border-width-form" placeholder="Телефон" required>
-                
-                                  <label for="email"></label>
-            
-                                   <input type="text" name="email" id="email" class ="bg-size-color border-width-form " placeholder="E-mail" required>
+                                    <label for="name"></label>
+                                    <input type="text" name="name" id="name" class="bg-size-color border-width-form" placeholder="Ім&#039;я" required>
+                                    <label for="phone"></label>
+                                    <input type="text" name="phone" id="phone" class="bg-size-color border-width-form" placeholder="Телефон" required>
+                                    <label for="email"></label>
+                                    <input type="text" name="email" id="email" class="bg-size-color border-width-form " placeholder="E-mail" required>
                                 </p>
                                 <label for="message"></label>
                                 <p>
-                                    <textarea name="message" id="message" class ="bg-size-color border-width-form" placeholder="Повідомлення" cols="30" rows="6"></textarea>
+                                    <textarea name="message" id="message" class="bg-size-color border-width-form" placeholder="Повідомлення" cols="30" rows="6"></textarea>
                                 </p>
                                 <p>
-                                    <button type="submit" name="submit" class ="bg-size-color" value="submit-contacts">Відправити</button>
+                                    <button type="submit" name="submit" class="bg-size-color" value="submit-contacts">Відправити</button>
                                 </p>
                             </form>
                         </div>
@@ -409,13 +403,13 @@
             <div class="footer-description flex-row-layout">
                 <div class="logo_img-logo_description flex-column-layout">
                     <a href="https://andriykostretskiy.github.io/architecture" class="flex-row-layout">
-                        <figure >
+                        <figure>
                             <img src="img/logo.png" alt="Логотип компанії у вигляді букви М ">
                         </figure>
-                        <h3 class="footer-logo-description">Mark &Mell</h3>
+                        <h3 class="footer-logo-description">Mark & Mell</h3>
                     </a>
                     <div>
-                        <p>Markowitz &Mellencamp</p>
+                        <p>Markowitz & Mellencamp</p>
                         <p>Архітектурний дизайн</p>
                     </div>
                 </div>

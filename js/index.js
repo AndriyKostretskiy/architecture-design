@@ -204,54 +204,24 @@ jQuery(document).ready(function($) {
     });
     
     $(".carusel-sl").slick({
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                /*autoplay: true,
-                autoplaySpeed: 2000,*/
-                dots: true,
-                infinite: true,
-                respo: "window"
-               /* responsive: [
-                    {
-                      breakpoint: 767,
-                      settings: {
-                        slidesPerRow: 1,
-                        rows: 1,
-                      }
-                    }
-                  ]*/
-	    
-             });
-    
-    /*$(window).resize(function(){
-        if( $(window).width() > 767) {
-            $(".carusel-sl").slick({
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                /*autoplay: true,
-                autoplaySpeed: 2000,*/
-                /*dots: true,
-                infinite: true,
-                respo: "window",
-             }); 
-        } else {
-            $(".carusel-sl").slick({
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        dots: true,
+        infinite: true,
+        responsive: [
+            {
+              breakpoint: 767,
+              settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                /*autoplay: true,
-                autoplaySpeed: 2000,*/
-                /*dots: true,
-                infinite: true,
-                respondTo: "window",
-               
-	    
-             }); 
-            
-        }
-    });*/
-    
-    
-       
+              }
+            }
+        ]
+
+     });
+
 });
 
 (function() {
@@ -270,6 +240,40 @@ jQuery(document).ready(function($) {
             .classList.add("scroll-top-show") :
         document.querySelector(".scroll-top")
             .classList.remove("scroll-top-show");
+    }
+    
+    loadJsonAjax();
+    
+    function loadJsonAjax() {
+        const xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                const serviceData = JSON.parse(xhr.responseText);
+                document.querySelector('.firstServiceName').innerText = serviceData.services.firstService.nameService;
+                document.querySelector('.firstServiceDescript').innerText = serviceData.services.firstService.describingService;
+                document.querySelector('.secondServiceName').innerText = serviceData.services.secondService.nameService;
+                document.querySelector('.secondServiceDescript').innerText = serviceData.services.secondService.describingService;
+                document.querySelector('.thirdServiceName').innerText = serviceData.services.thirdService.nameService;
+                document.querySelector('.thirdServiceDescript').innerText = serviceData.services.thirdService.describingService;
+            }
+        }
+        xhr.open('GET', 'service-data.json', true);
+        xhr.send();
+    }
+    
+    loadJsonFetch();
+    
+    function loadJsonFetch() {
+    fetch('service-data.json')
+        .then( response => response.json() )
+        .then( serviceData => {
+            document.querySelector('.fourthServiceName').innerText = serviceData.services.fourthService.nameService;
+            document.querySelector('.fourthServiceDescript').innerText = serviceData.services.fourthService.describingService;
+            document.querySelector('.fifthServiceName').innerText = serviceData.services.fifthService.nameService;
+            document.querySelector('.fifthServiceDescript').innerText = serviceData.services.fifthService.describingService;
+            document.querySelector('.sixthServiceName').innerText = serviceData.services.sixthService.nameService;
+            document.querySelector('.sixthServiceDescript').innerText = serviceData.services.sixthService.describingService;
+        })
     }
     
 })();

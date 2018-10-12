@@ -119,7 +119,7 @@ jQuery(document).ready(function($) {
         });
     });*/
     
-    $(window).scroll(function () {
+    /*$(window).scroll(function () {
         $(".sheme-work-first").each(function() {
             let imgPos = $(this).offset().top;
             let topWindow = $(window).scrollTop();
@@ -157,7 +157,7 @@ jQuery(document).ready(function($) {
                $(this).show(3500);
             }
         });
-    });
+    });*/
     
     /*$(window).scroll(function () {
         $(".contacts-description-left").each(function() {

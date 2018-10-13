@@ -1104,11 +1104,13 @@ header {
 
 form textarea {
     width: 100%;
+    color: #ffffff;
 }
 
 form input {
     width: 32%;
     margin-right: 0.995%;
+    color: #ffffff;
 }
 
 @media (max-width: 768px) {

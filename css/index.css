@@ -808,6 +808,12 @@ header {
     }
 }
 
+@media (max-width: 370px) {
+    .container-change {
+        min-height: 65vh;
+    }
+}
+
 @media (max-width: 768px) {
     .slick-slide img {
         width: 55%;
@@ -831,7 +837,7 @@ header {
 
 .slick-dots {
     position: absolute;
-    bottom: 8%;
+    bottom: 3rem;
     display: block;
     width: 100%;
     padding: 0;
@@ -839,6 +845,24 @@ header {
     list-style: none;
     text-align: center;
 }
+
+@media (max-width: 700px) {
+    .slick-dots {
+        bottom: 4rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .slick-dots {
+        bottom: 3.5rem;
+    }
+}
+
+/*@media (max-width: 370px) {
+    .slick-dots {
+        bottom: 2rem;
+    }
+}*/
 
 .slick-dots li.slick-active button:before {
     color: #ffcc00;
@@ -922,9 +946,6 @@ header {
     }
 }
 
-.sheme-work-first {
-    color: #ffcc00;
-}
 .sheme-work-line span {
     width: 100%;
     border-color: #ffcc00;
@@ -934,7 +955,7 @@ header {
     font-size: 50px;
 }
 
-.sheme-work-description div > span:first-child:hover {
+.sheme-work-description div:hover {
     color: #ffcc00;
 }
 

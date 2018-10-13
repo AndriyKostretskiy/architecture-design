@@ -265,7 +265,7 @@ jQuery(document).ready(function($) {
                 document.querySelector('.load-third-service-descript').innerText = serviceData.services.thirdService.describingService;
                 document.querySelector('.load-about-description-up').innerText = serviceData.aboutInfo.upDescription;
             }
-        }
+        };
         xhr.open('GET', 'service-data.json', true);
         xhr.send();
     }
@@ -283,7 +283,7 @@ jQuery(document).ready(function($) {
             document.querySelector('.load-sixth-service-name').innerText = serviceData.services.sixthService.nameService;
             document.querySelector('.load-sixth-service-descript').innerText = serviceData.services.sixthService.describingService;
             document.querySelector('.load-about-description-down').innerText = serviceData.aboutInfo.downDescription;
-        })
+        });
     }
     
 })();

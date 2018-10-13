@@ -30,7 +30,7 @@ jQuery(document).ready(function($) {
     });
     
     $(window).scroll(function () {
-        $(".about-info-caption, .about-team-caption").each(function() {
+        $(".about-info-caption, .sheme-work-caption").each(function() {
             let imgPos = $(this).offset().top;
             let topWindow = $(window).scrollTop();
             if(imgPos < topWindow + 500) {
@@ -40,7 +40,7 @@ jQuery(document).ready(function($) {
     });
     
      $(window).scroll(function () {
-        $(".sheme-work-caption, .contacts-caption").each(function() {
+        $(".about-team-caption, .contacts-caption").each(function() {
             let imgPos = $(this).offset().top;
             let topWindow = $(window).scrollTop();
             if(imgPos < topWindow + 500) {
@@ -49,7 +49,7 @@ jQuery(document).ready(function($) {
         });
     });
     
-    $(window).scroll(function () {
+    /*$(window).scroll(function () {
         $(".about-service-caption, .about-works-caption").each(function() {
             let imgPos = $(this).offset().top;
             let topWindow = $(window).scrollTop();
@@ -57,7 +57,7 @@ jQuery(document).ready(function($) {
                $(this).addClass("animated zoomIn");
             }
         });
-    });
+    });*/
     
     /*$(window).scroll(function () {
         $(".about-info-description-left").each(function() {
@@ -227,8 +227,7 @@ jQuery(document).ready(function($) {
     
     document.querySelector(".scroll-top")
             .addEventListener("click", () => {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
+                scrollToTop(1000);
             });
             
     window.onscroll = () => scrollTopAppearance(); 
@@ -241,6 +240,16 @@ jQuery(document).ready(function($) {
             .classList.remove("scroll-top-show");
     }
     
+    function scrollToTop(scrollDuration) {
+        let scrollStep = -window.scrollY / (scrollDuration / 15),
+            scrollInterval = setInterval(function(){
+            if ( window.scrollY != 0 ) {
+                window.scrollBy( 0, scrollStep );
+            }
+            else clearInterval(scrollInterval); 
+        },15);
+    }
+    
     loadJsonAjax();
     
     function loadJsonAjax() {
@@ -248,12 +257,13 @@ jQuery(document).ready(function($) {
         xhr.onreadystatechange = function() {
             if (xhr.readyState === 4 && xhr.status === 200) {
                 const serviceData = JSON.parse(xhr.responseText);
-                document.querySelector('.firstServiceName').innerText = serviceData.services.firstService.nameService;
-                document.querySelector('.firstServiceDescript').innerText = serviceData.services.firstService.describingService;
-                document.querySelector('.secondServiceName').innerText = serviceData.services.secondService.nameService;
-                document.querySelector('.secondServiceDescript').innerText = serviceData.services.secondService.describingService;
-                document.querySelector('.thirdServiceName').innerText = serviceData.services.thirdService.nameService;
-                document.querySelector('.thirdServiceDescript').innerText = serviceData.services.thirdService.describingService;
+                document.querySelector('.load-first-service-name').innerText = serviceData.services.firstService.nameService;
+                document.querySelector('.load-first-service-descript').innerText = serviceData.services.firstService.describingService;
+                document.querySelector('.load-second-service-name').innerText = serviceData.services.secondService.nameService;
+                document.querySelector('.load-second-service-descript').innerText = serviceData.services.secondService.describingService;
+                document.querySelector('.load-third-service-name').innerText = serviceData.services.thirdService.nameService;
+                document.querySelector('.load-third-service-descript').innerText = serviceData.services.thirdService.describingService;
+                document.querySelector('.load-about-description-up').innerText = serviceData.aboutInfo.upDescription;
             }
         }
         xhr.open('GET', 'service-data.json', true);
@@ -266,12 +276,13 @@ jQuery(document).ready(function($) {
     fetch('service-data.json')
         .then( response => response.json() )
         .then( serviceData => {
-            document.querySelector('.fourthServiceName').innerText = serviceData.services.fourthService.nameService;
-            document.querySelector('.fourthServiceDescript').innerText = serviceData.services.fourthService.describingService;
-            document.querySelector('.fifthServiceName').innerText = serviceData.services.fifthService.nameService;
-            document.querySelector('.fifthServiceDescript').innerText = serviceData.services.fifthService.describingService;
-            document.querySelector('.sixthServiceName').innerText = serviceData.services.sixthService.nameService;
-            document.querySelector('.sixthServiceDescript').innerText = serviceData.services.sixthService.describingService;
+            document.querySelector('.load-fourth-service-name').innerText = serviceData.services.fourthService.nameService;
+            document.querySelector('.load-fourth-service-descript').innerText = serviceData.services.fourthService.describingService;
+            document.querySelector('.load-fifth-service-name').innerText = serviceData.services.fifthService.nameService;
+            document.querySelector('.load-fifth-service-descript').innerText = serviceData.services.fifthService.describingService;
+            document.querySelector('.load-sixth-service-name').innerText = serviceData.services.sixthService.nameService;
+            document.querySelector('.load-sixth-service-descript').innerText = serviceData.services.sixthService.describingService;
+            document.querySelector('.load-about-description-down').innerText = serviceData.aboutInfo.downDescription;
         })
     }
     

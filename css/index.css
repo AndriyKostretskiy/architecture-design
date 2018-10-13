@@ -70,6 +70,13 @@ body {
     background-position: center;
 }
 
+.bg-size-color-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    background-color: #18191b;
+    border-color: #ffffff;
+}
+
 .captions-titles {
    font-size: 3rem;
    text-transform: uppercase;
@@ -232,6 +239,10 @@ header {
     color: #ffcc00;
 }
 
+.nav-menu-sticky a:hover  {
+    color: #ffffff;
+}
+
 @media (max-width: 950px) {
     .nav-menu a {
         display: none;
@@ -277,13 +288,13 @@ header {
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-end;
-        margin: -10% 10% 0;
+        margin: -3.4rem 10% 0;
     }
 }
 
 @media (max-width: 400px) {
     .nav-menu-on  {
-        margin-top: 0;
+        margin: 0 21%;
     }
 }
 
@@ -413,6 +424,22 @@ header {
     .main-photo-description .main-photo-title-second {
         font-size: 1.2rem;
     }
+}
+
+.main-photo-button {
+    margin-top: 2rem;
+    padding: 13px 35px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.main-photo-button:hover {
+    background-color: #ffffff;
+    border-color: #ffcc00;
+    color: #18191b;
+    cursor: pointer;
 }
 
 .about-info-description {
@@ -852,6 +879,7 @@ header {
 /*---------------Section for Sheme-work --------------*/
 .sheme-work-bg-img {
     background-image: url('../img/work-sheme-bg.jpg');
+    background-attachment: fixed;
     min-height: 90vh;
 }
 
@@ -977,6 +1005,9 @@ header {
     .contacts-description div:last-child {
         margin-top: 7%;
     }
+    .contacts-caption-first {
+        margin-top: 20%;
+    }
 }
 
 .contacts-description div div, 
@@ -1084,6 +1115,7 @@ form p:last-child button {
     color: #ffffff;
     text-transform: uppercase;
     padding: 13px 35px;
+    cursor: pointer;
 }
 
 form p:last-child button:hover {
@@ -1091,13 +1123,6 @@ form p:last-child button:hover {
     background-color: #ffffff;
     border-color: #ffcc00;
     font-weight: 600;
-}
-
-.bg-size-color {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    background-color: #18191b;
-    border-color: #ffffff;
 }
 
 .border-width-form {
@@ -1227,9 +1252,21 @@ form p:last-child button:hover {
     margin-left: 0;
 }
 
+.scroll-container {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.wrapper-scroll-top {
+    position: relative;
+}
 .scroll-top {
     display: none;
-    position: fixed;
+    position: absolute;
     bottom: 20px;
     right: 30px;
     z-index: 999;
@@ -1240,11 +1277,11 @@ form p:last-child button:hover {
     opacity: 0.6;
 }
 
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
     .scroll-top {
         right: 80px;
     }
-}
+}*/
 
 .scroll-top:hover {
     opacity: 1;

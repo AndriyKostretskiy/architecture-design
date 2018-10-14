@@ -777,8 +777,16 @@ header {
     min-height: 10vh;
 }
 
+.wrapper-second-title {
+    margin-bottom: -2.5rem;
+}
+
+.captions-lines-dotes {
+    margin: auto;
+}
+
 .wrapper-carusel-sl {
-    margin-top: -1%;
+    margin-top: -3rem;
     margin-bottom: -3%;
 }
 
@@ -863,12 +871,6 @@ header {
     }
 }
 
-/*@media (max-width: 370px) {
-    .slick-dots {
-        bottom: 2rem;
-    }
-}*/
-
 .slick-dots li.slick-active button:before {
     color: #ffcc00;
     opacity: .9;
@@ -893,6 +895,7 @@ header {
 
 .about-team-caption {
     margin-top: 10vh;
+    text-align: center;
 }
 
 .about-team-caption div .about-team-first-title {
@@ -1304,12 +1307,6 @@ form p:last-child button:hover {
     cursor: pointer;
     opacity: 0.6;
 }
-
-/*@media (min-width: 1200px) {
-    .scroll-top {
-        right: 80px;
-    }
-}*/
 
 .scroll-top:hover {
     opacity: 1;

@@ -1,33 +1,33 @@
 {
    "services": {
         "firstService": {
-            "nameService": "Послуга №1",
-            "describingService": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales fermentum gravida. Vivamus elementum massa neque, sed fringilla mi malesuada aliquet."
+            "nameService": "Розробка арт-дизайну",
+            "describingService": "Спеціалісти нашої компаніїї розробляють арт-дизайн майбутніх будівлель відповідно з сучасними стандартами будівницта та експлуатації."
         },
         "secondService": {
-            "nameService": "Послуга №2",
-            "describingService": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales fermentum gravida. Vivamus elementum massa neque, sed fringilla mi malesuada aliquet."
+            "nameService": "Проектування дизайну",
+            "describingService": "Спеціалісти нашої компаніїї розробляють арт-дизайн майбутніх будівлель відповідно з сучасними стандартами будівницта та експлуатації."
         },
         "thirdService": {
-            "nameService": "Послуга №3",
-            "describingService": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales fermentum gravida. Vivamus elementum massa neque, sed fringilla mi malesuada aliquet."
+            "nameService": "Підбирання матеріалів",
+            "describingService": "Спеціалісти нашої компаніїї розробляють арт-дизайн майбутніх будівлель відповідно з сучасними стандартами будівницта та експлуатації."
         },
         "fourthService": {
-            "nameService": "Послуга №4",
-            "describingService": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales fermentum gravida. Vivamus elementum massa neque, sed fringilla mi malesuada aliquet."
+            "nameService": "Закупівля матеріалів",
+            "describingService": "Спеціалісти нашої компаніїї розробляють арт-дизайн майбутніх будівлель відповідно з сучасними стандартами будівницта та експлуатації."
         },
         "fifthService": {
-            "nameService": "Послуга №5",
-            "describingService": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales fermentum gravida. Vivamus elementum massa neque, sed fringilla mi malesuada aliquet."
+            "nameService": "Будівництво будівлі",
+            "describingService": "Спеціалісти нашої компаніїї розробляють арт-дизайн майбутніх будівлель відповідно з сучасними стандартами будівницта та експлуатації."
         },
         "sixthService": {
-            "nameService": "Послуга №6",
-            "describingService": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales fermentum gravida. Vivamus elementum massa neque, sed fringilla mi malesuada aliquet."
+            "nameService": "Здавання в експлуатацію",
+            "describingService": "Спеціалісти нашої компаніїї розробляють арт-дизайн майбутніх будівлель відповідно з сучасними стандартами будівницта та експлуатації."
         }
    },
    
    "aboutInfo": {
-        "upDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales fermentum gravida. Vivamus elementum massa neque, sed fringilla mi malesuada aliquet.",
-        "downDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales fermentum gravida. Vivamus elementum massa neque, sed fringilla mi malesuada aliquet."
+        "upDescription": "Наші професіонали враховують все, використовуючи комплексний підхід у розробці дизайн-проектів.Розробка будинків від початку до кінця - це те, що ми пропонуємо.",
+        "downDescription": "Працюючи на ринку будівництва, ми співпрацюємо з найкращими постачальниками будматеріалів. Тому допоможемо вибрати найкраще співвідношення ціни і якості."
    }
 }
